@@ -10,7 +10,7 @@ from utils.actions import build_and_send_transaction, read_function_from_contrac
 from utils.utils import read_abi
 from utils.constants import LZ_VALUE, GENEREAL_SLEEP_TIMER
 
-ACTION_MULTIPLIER = 1000  # Make sure you have testnet gas! :)
+ACTION_MULTIPLIER = 20000  # Make sure you have testnet gas! :)
 
 load_dotenv()
 
