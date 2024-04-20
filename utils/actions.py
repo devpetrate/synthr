@@ -61,7 +61,7 @@ def build_and_send_transaction(
         {
             "from": account_address,
             "nonce": web3_client.eth.get_transaction_count(account_address),
-            "gas": gas, # re-enable if you don't want it to automatically match network gas
+            "gas": gas,  # re-enable if you don't want it to automatically match network gas
             "gasPrice": gas_price,
             "value": web3_client.to_wei(lz_value, "ether"),
         }
