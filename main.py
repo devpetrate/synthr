@@ -10,7 +10,7 @@ from utils.actions import build_and_send_transaction, read_function_from_contrac
 from utils.utils import read_abi
 from utils.constants import LZ_VALUE, GENEREAL_SLEEP_TIMER
 
-ACTION_MULTIPLIER = 1000  # Make sure you have testnet gas! :)
+ACTION_MULTIPLIER = 100  # Make sure you have testnet gas! :)
 
 load_dotenv()
 
@@ -137,7 +137,7 @@ if __name__ == "__main__":
             account_address=account_address,
             private_key=private_key,
             function_args=(
-                "0x4554480000000000000000000000000000000000000000000000000000000000",
+                "0x4545544800000000000000000000000000000000000000000000000000000000",
                 int(
                     issue_amount // 1e8
                 ),  # Feel free to change it to any amount you want,
