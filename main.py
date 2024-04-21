@@ -57,19 +57,19 @@ if __name__ == "__main__":
         time.sleep(GENEREAL_SLEEP_TIMER)
 
         # Approve Synthr faucet tokens
-        build_and_send_transaction(
-            web3_client=web3,
-            contract_address=faucet_address,
-            function_name="approve",
-            abi=faucet_abi,
-            account_address=account_address,
-            private_key=private_key,
-            function_args=(
-                main_contract_address,
-                115792089237316195423570985008687907853269984665640564039457584007913129639935,
-            ),
-        )
-        time.sleep(GENEREAL_SLEEP_TIMER)
+        # build_and_send_transaction(
+        #     web3_client=web3,
+        #     contract_address=faucet_address,
+        #     function_name="approve",
+        #     abi=faucet_abi,
+        #     account_address=account_address,
+        #     private_key=private_key,
+        #     function_args=(
+        #         main_contract_address,
+        #         115792089237316195423570985008687907853269984665640564039457584007913129639935,
+        #     ),
+        # )
+        # time.sleep(GENEREAL_SLEEP_TIMER)
 
         # Deposit Synthr faucet tokens
         build_and_send_transaction(
@@ -223,10 +223,10 @@ if __name__ == "__main__":
         #     )
         #     time.sleep(GENEREAL_SLEEP_TIMER)
 
-        balance = web3.from_wei(web3.eth.get_balance(account_address), "ether")
-        diff = initial_balance - balance
-        running_total_diff += diff
-        logging.warning(
-            f"Difference from initial balance: {-diff} ETH, from {initial_balance} to {balance}"
-        )
-        logging.warning(f"Running total difference: {-running_total_diff} ETH")
+        # balance = web3.from_wei(web3.eth.get_balance(account_address), "ether")
+        # diff = initial_balance - balance
+        # running_total_diff += diff
+        # logging.warning(
+        #     f"Difference from initial balance: {-diff} ETH, from {initial_balance} to {balance}"
+        # )
+        # logging.warning(f"Running total difference: {-running_total_diff} ETH")
